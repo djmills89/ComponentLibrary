@@ -23,7 +23,7 @@
 </figure>
 
 <p>
-  All typical HTML attributes like <code>disabled</code> and <code>aria-*</code> can be added to the <code>&lt;Button&gt;</code> component.
+  All typical HTML attributes like <code class="inline-code">disabled</code> and <code class="inline-code">aria-*</code> can be added to the <code class="inline-code">&lt;Button&gt;</code> component.
 </p>
 
 <p>
@@ -38,18 +38,26 @@
 </figure>
 
 <p>
-  If a number is passed to <code>borderRadius</code>, the component assumes pixel sizing.
+  If a number is passed to <code class="inline-code">borderRadius</code>, the component assumes pixel sizing.
 </p>
 
 <p>
-  Once color themes are added, you’ll be able to pass theme color names (e.g., <code>'primary'</code>) to color props for consistency across your UI.
+  Once color themes are added, you’ll be able to pass theme color names (e.g., <code class="inline-code">'primary'</code>) to color props for consistency across your UI.
 </p>
 
 
 <style>
     figure {
-        background-color: lightgray;
+        background-color: var(--rhythm-blue);
+        color: var(--primary-text);
         width: 50%;
         padding: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        box-shadow: 5px 5px var(--mid-cool-gray);
+    }
+    .inline-code {
+        background-color: var(--beer-orange);
+        padding: .2rem;
     }
 </style>

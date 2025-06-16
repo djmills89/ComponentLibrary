@@ -1,7 +1,7 @@
 <script lang="ts">
     export let borderSize: string = '1px';
     export let borderType: string = 'solid';
-    export let borderColor: string = 'blue';
+    export let borderColor: string = 'var(--rhythm-blue)';
     export let borderRadius: string | number = '2rem';
     export let fontSize: string = '1rem';
     export let paddingBlock: string = '1rem';
@@ -37,11 +37,11 @@
 
 <style>
     .hover-enabled {
-        transition: background-color 0.2s ease;
+        transition: background-color .5s ease, color .5s ease;
     }
 
     .hover-enabled:hover {
-        background-color: lightblue !important;
-        color: lightgray;
+        background-color: var(--rhythm-blue) !important;
+        color: var(--primary-text) !important;
     }
 </style>
